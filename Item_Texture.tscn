@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Item_Texture.gd" type="Script" id=1]
+
+[node name="Item_Texture" type="TextureRect"]
+margin_left = 0.712963
+margin_top = -0.356476
+margin_right = 40.713
+margin_bottom = 39.6435
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "This is a base for adding new items
+\"Add new inherite scene\" and then add a scene from object folder and then add a sprite from the sprite folder"
+}

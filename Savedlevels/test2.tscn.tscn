@@ -1,0 +1,110 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Objects/Fox.gd" type="Script" id=1]
+[ext_resource path="res://Objects/Fox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Objects/Frog.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Objects/Tiger.tscn" type="PackedScene" id=4]
+[ext_resource path="res://tilemap_blocks.tres" type="TileSet" id=5]
+
+[node name="Level" type="Node2D"]
+position = Vector2( -2.00568, -1.23427 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 9, 9 )
+cell_tile_origin = 1
+centered_textures = true
+format = 1
+tile_data = PoolIntArray( 262168, 19, 0, 262169, 19, 0, 262170, 19, 0, 262171, 19, 0, 262172, 19, 0, 262173, 19, 0, 262176, 17, 0, 327709, 19, 0, 327712, 17, 0, 393245, 19, 0, 393248, 17, 0, 458781, 19, 0, 458784, 17, 0, 458786, 17, 0, 458787, 17, 0, 458788, 17, 0, 458789, 17, 0, 524313, 19, 0, 524314, 19, 0, 524315, 19, 0, 524316, 19, 0, 524317, 19, 0, 524320, 17, 0, 524325, 17, 0, 589850, 19, 0, 589856, 17, 0, 589861, 17, 0, 655386, 19, 0, 655392, 17, 0, 655393, 17, 0, 655394, 17, 0, 655395, 17, 0, 655396, 17, 0, 655397, 17, 0, 720922, 19, 0, 720932, 17, 0, 720933, 17, 0, 786458, 19, 0, 917524, 20, 0, 983060, 20, 0, 1048596, 20, 0, 1114132, 20, 0, 1245195, 20, 0, 1245196, 20, 0, 1245197, 20, 0, 1245198, 20, 0, 1245199, 20, 0, 1245200, 20, 0 )
+
+[node name="Fox" type="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 160.146, 110.958 )
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "This is a base for adding new objects 
+
+\"add new inherit scene\" and then replace the animated sprite and then add a collision box"
+}
+
+[node name="@Fox@87" type="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 182.505, 85.7913 )
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "This is a base for adding new objects 
+
+\"add new inherit scene\" and then replace the animated sprite and then add a collision box"
+}
+
+[node name="@Fox@88" type="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 164.224, 146.625 )
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "This is a base for adding new objects 
+
+\"add new inherit scene\" and then replace the animated sprite and then add a collision box"
+}
+
+[node name="@Fox@89" type="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 130.615, 149.125 )
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "This is a base for adding new objects 
+
+\"add new inherit scene\" and then replace the animated sprite and then add a collision box"
+}
+
+[node name="Frog" type="Area2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 227.224, 100.291 )
+__meta__ = {
+"_editor_description_": "This is a base for adding new objects 
+
+\"add new inherit scene\" and then replace the animated sprite and then add a collision box"
+}
+
+[node name="@Frog@90" type="Area2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 236.365, 64.6246 )
+__meta__ = {
+"_editor_description_": "This is a base for adding new objects 
+
+\"add new inherit scene\" and then replace the animated sprite and then add a collision box"
+}
+
+[node name="@Frog@91" type="Area2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 192.771, 71.1246 )
+__meta__ = {
+"_editor_description_": "This is a base for adding new objects 
+
+\"add new inherit scene\" and then replace the animated sprite and then add a collision box"
+}
+
+[node name="Tiger" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 132.724, 141.958 )
+__meta__ = {
+"_editor_description_": "This is a base for adding new objects 
+
+\"add new inherit scene\" and then replace the animated sprite and then add a collision box"
+}
+
+[node name="@Tiger@92" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 112.334, 78.2913 )
+__meta__ = {
+"_editor_description_": "This is a base for adding new objects 
+
+\"add new inherit scene\" and then replace the animated sprite and then add a collision box"
+}
+
+[node name="@Tiger@93" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 69.7242, 139.458 )
+__meta__ = {
+"_editor_description_": "This is a base for adding new objects 
+
+\"add new inherit scene\" and then replace the animated sprite and then add a collision box"
+}
+
+[node name="@Tiger@94" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 88.4273, 191.291 )
+__meta__ = {
+"_editor_description_": "This is a base for adding new objects 
+
+\"add new inherit scene\" and then replace the animated sprite and then add a collision box"
+}
